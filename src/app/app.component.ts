@@ -12,7 +12,7 @@ export class AppComponent implements OnInit {
   constructor(private weatherService: WeatherService) {}
 
   ngOnInit() {
-    this.weatherService.getCurrentWeather('New York').subscribe(data => {
+    this.weatherService.getCurrentWeather('Birkirkara').subscribe(data => {
       this.weatherData = data;
       console.log(this.weatherData);
     });

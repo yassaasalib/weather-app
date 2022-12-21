@@ -1,4 +1,62 @@
+<style>
+  .weather-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 500px;
+  height: 300px;
+  background-color: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  padding: 30px;
+}
 
+.weather-card h1 {
+  font-size: 48px;
+  font-weight: 300;
+  margin-bottom: 20px;
+  color: #4a4a4a;
+}
+
+.weather-card p {
+  font-size: 36px;
+  font-weight: 300;
+  margin-bottom: 20px;
+  color: #4a4a4a;
+}
+
+.weather-card .icon {
+  width: 100px;
+  height: 100px;
+  background-size: cover;
+  border-radius: 50%;
+}
+
+.weather-card .temp {
+  display: flex;
+  align-items: center;
+}
+
+.weather-card .temp .value {
+  font-size: 72px;
+  font-weight: 300;
+  margin-right: 20px;
+  color: #4a4a4a;
+}
+
+.weather-card .temp .unit {
+  font-size: 36px;
+  font-weight: 300;
+  color: #4a4a4a;
+}
+
+.weather-card .description {
+  font-size: 24px;
+  font-weight: 300;
+  color: #4a4a4a;
+}
+
+</style>
 <div class="weather-card">
   <h1>Current Weather in {{ weatherData.name }}</h1>
   <p>Temperature: {{ weatherData.main.temp }}°F</p>
