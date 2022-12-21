@@ -1,0 +1,12 @@
+
+<div class="weather-card">
+  <h1>Current Weather in {{ weatherData.name }}</h1>
+  <p>Temperature: {{ weatherData.main.temp }}°F</p>
+  <p>Description: {{ weatherData.weather[0].description }}</p>
+</div>
+
+<form (submit)="getWeather()">
+  <label for="city">City:</label>
+  <input type="text" [(ngModel)]="city" name="city">
+  <button type="submit">Get Weather</button>
+</form>
